@@ -1,0 +1,66 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #00572a;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+/* HEADER */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem 6rem;
+}
+.primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.main-lists {
+  font-size: 2rem;
+}
+.inner-head {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.main-lists {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+.header-link:link,
+.header-link:visited {
+  color: #333;
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:active {
+  color: #333;
+  font-weight: 600;
+}
+.main-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  cursor: pointer;
+}
