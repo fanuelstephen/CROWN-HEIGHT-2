@@ -237,3 +237,44 @@ h4 {
   padding: 0 3.2rem;
   margin-bottom: 2rem;
 }
+/* *********************************************** */
+/*THING TO DO */
+.thing-to-do-section {
+  margin-bottom: 15rem;
+}
+.thing-to-do {
+  background-color: #fff;
+  padding: 9.6rem 0;
+}
+.thing-to-do-right {
+  position: relative;
+}
+.thing-to-do-left {
+  position: relative;
+  justify-self: end;
+}
+
+.ushuhuda-left {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 270%;
+  left: 53%;
+}
+.ushuhuda-right {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 270%;
+  left: 19%;
+}
+.ushuhuda-txt {
+  font-size: 1.8rem;
+  margin-bottom: 2.8rem;
+}
