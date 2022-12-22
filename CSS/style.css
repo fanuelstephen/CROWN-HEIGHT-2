@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -11,6 +13,7 @@
   margin: 0;
 }
 html {
+  box-sizing: border-box;
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
@@ -18,12 +21,13 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   background-color: #00572a;
 }
 /* RESUSABLE  */
 .grid {
   display: grid;
-  gap: 3rem;
+  gap: 5.2rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -47,7 +51,7 @@ body {
   background-color: #fff;
 }
 .primary {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 .main-lists {
@@ -67,12 +71,18 @@ body {
 .header-link:link,
 .header-link:visited {
   color: #333;
+  font-weight: 600;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 .header-link:hover,
 .header-link:active {
-  color: #333;
-  font-weight: 600;
+  color: rgba(0, 0, 0, 0.696);
+}
+.filled-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .main-icon {
   height: 2.8rem;
@@ -80,6 +90,7 @@ body {
   cursor: pointer;
   padding: 2.8rem;
 }
+
 /* *********************************************** */
 /* MAIN */
 .main-text {
@@ -87,7 +98,10 @@ body {
   display: grid;
   padding: 2rem;
 }
-
+h1 {
+  font-size: 3.8rem;
+  padding-left: 14rem;
+}
 h2 {
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -100,7 +114,7 @@ h3 {
 }
 h4 {
   font-size: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .secondary-paragraph {
   font-size: 1.5rem;
@@ -122,4 +136,104 @@ h4 {
 
 .wite {
   background-color: #fff;
+}
+/* ********************************* */
+/* SECOND SECTION */
+.second-section {
+  background-color: #fff;
+  padding: 4.8rem 0;
+}
+.meal-section {
+  /* padding: 3.6rem 4.8rem; */
+}
+.food {
+  align-items: center;
+  width: 500px;
+  height: 350px;
+}
+.food-left {
+  position: relative;
+  justify-self: end;
+}
+.food-right {
+  position: relative;
+}
+.testimonial,
+.testimonial-right {
+  font-size: 1.8rem;
+  margin-bottom: 2.8rem;
+}
+.testimonials {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 115%;
+  left: 19%;
+}
+.testimonials-right {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  top: 115%;
+  left: 54%;
+}
+.location {
+  display: flex;
+  gap: 3.8rem;
+  /* margin-bottom: 2rem; */
+}
+.location-link:link,
+.location-link:visited {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #3ba460;
+  display: flex;
+  gap: 0.5rem;
+}
+.location-link:hover,
+.location-link:active {
+  text-decoration: underline;
+  color: #01511d;
+}
+/* *********************************************** */
+/*MEAL-SECTION */
+.meal-section {
+  background-color: #fff;
+  padding: 4.8rem 0;
+}
+.meal-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 3.2rem;
+}
+.french,
+.bergn,
+.catfish {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #929494;
+  box-shadow: 0 8rem 9rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.meal-testiomonial {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+.meal {
+  margin: 0 8rem;
+}
+.meal-info {
+  padding: 0 3.2rem;
+  margin-bottom: 2rem;
 }
