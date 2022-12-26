@@ -18,76 +18,124 @@
   </head>
   <body>
     <header>
-      <div class="main-header container">
-        <div class="inner-head">
-          <p class="primary">the BLOCK</p>
-          <nav class="main-list">
-            <ul class="main-lists">
+      <div class="header container">
+        <div class="header-content">
+          <h1 class="heading">the BLOCK</h1>
+          <nav class="nav-list">
+            <ul class="ul-lists">
               <li class="filled-icon">
-                <a class="header-link" href="#">NEIGHBORHOOD</a>
-                <ion-icon name="chevron-down-outline"></ion-icon>
+                <a class="header-link" href="#">NEIGHBORHOODS</a>
+                <ion-icon
+                  class="header-icon"
+                  name="chevron-down-outline"
+                ></ion-icon>
               </li>
               <li><a class="header-link" href="#">EXPOLORE THE MAP</a></li>
               <li><a class="header-link" href="#">ABOUT</a></li>
             </ul>
           </nav>
         </div>
-        <ion-icon class="main-icon" name="search-outline"></ion-icon>
+        <ion-icon class="search-icon" name="search-outline"></ion-icon>
       </div>
     </header>
     <main>
-      <section class="main-sections container">
-        <div class="main-section grid grid--2-cols">
-          <img class="main-image" src="img/image 2.jpg" alt="" />
-          <div class="main-text">
-            <h2>EXPOLORE</h2>
-            <h3>Crown heights</h3>
-            <p class="secondary-paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-              ipsam omnis beatae reprehenderit sint ex, ullam blanditiis aut
-              culpa in tempora deleniti tempore laboriosam ab est molestiae
-              velit neque fuga! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Sunt ipsam omnis beatae
-            </p>
+      <section class="crown-height container grid grid--2-cols">
+        <img class="crown-image" src="img/image 2.jpg" alt="" />
+        <div class="crown-text">
+          <h2>EXPOLORE</h2>
+          <h3>Crown heights</h3>
+          <p class="crown-discription">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ipsam
+            omnis beatae reprehenderit sint ex, ullam blanditiis aut culpa in
+            tempora deleniti tempore laboriosam ab est molestiae velit neque
+            fuga! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+            ipsam omnis beatae
+          </p>
 
-            <div>
-              <h4>Charactaristics:</h4>
-              <div class="grid grid--2-cols">
-                <div>
-                  <ul>
-                    <li class="sarah">
-                      <ion-icon
-                        class="sarah-icon"
-                        name="eyedrop-outline"
-                      ></ion-icon>
-                      CARIBBEAN INFLUENCE
-                    </li>
-                    <li class="sarah">
-                      <ion-icon
-                        class="sarah-icon"
-                        name="eyedrop-outline"
-                      ></ion-icon>
-                      DOG - FRIENDLY
-                    </li>
-                  </ul>
+          <div>
+            <h4>Charactaristics:</h4>
+            <div class="grid grid--2-cols">
+              <div>
+                <ul>
+                  <li class="crown-li">
+                    <ion-icon
+                      class="crown-icon"
+                      name="eyedrop-outline"
+                    ></ion-icon>
+                    CARIBBEAN INFLUENCE
+                  </li>
+                  <li class="crown-li">
+                    <ion-icon
+                      class="crown-icon"
+                      name="eyedrop-outline"
+                    ></ion-icon>
+                    DOG - FRIENDLY
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="crown-li">
+                    <ion-icon
+                      class="crown-icon"
+                      name="eyedrop-outline"
+                    ></ion-icon>
+                    LAIDBACK
+                  </li>
+                  <li class="crown-li">
+                    <ion-icon
+                      class="crown-icon"
+                      name="eyedrop-outline"
+                    ></ion-icon>
+                    GOOD FOR BRUNCH
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="things-to-eat container">
+        <div class="things-to-eat-content">
+          <h1>Things to Eat</h1>
+          <div class="grid grid--2-cols">
+            <div class="food-card card-1">
+              <div class="food-decriptions food-decriptions-shadow"></div>
+              <div class="food-decriptions">
+                <h4>Alita</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur <br />
+                  adipisicing elit. Molestiae nisi perferendis <br />
+                  aspernatur facilis, possimus
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
                 </div>
-                <div>
-                  <ul>
-                    <li class="sarah">
-                      <ion-icon
-                        class="sarah-icon"
-                        name="eyedrop-outline"
-                      ></ion-icon>
-                      LAIDBACK
-                    </li>
-                    <li class="sarah">
-                      <ion-icon
-                        class="sarah-icon"
-                        name="eyedrop-outline"
-                      ></ion-icon>
-                      GOOD FOR BRUNCH
-                    </li>
-                  </ul>
+              </div>
+            </div>
+
+            <div class="food-card card-2">
+              <div class="food-decriptions food-decriptions-shadow"></div>
+              <div class="food-decriptions">
+                <h4>Joel's and Sal's</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur <br />
+                  adipisicing elit. Molestiae nisi perferendis <br />
+                  aspernatur facilis, possimus
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
                 </div>
               </div>
             </div>
@@ -95,58 +143,13 @@
         </div>
       </section>
 
-      <section class="second-section container">
-        <h1>Things to Eat</h1>
-        <div class="meal-section grid grid--2-cols">
-          <div class="food-left">
-            <img class="food" src="img/meal-1.jpg" alt="food" />
-          </div>
-          <div class="food-right">
-            <img class="food" src="img/meal-2.jpg" alt="food" />
-          </div>
-        </div>
-        <div class="testimonials">
-          <h4>Alita</h4>
-          <p class="testimonial">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Molestiae nisi perferendis <br />
-            aspernatur facilis, possimus
-          </p>
-          <div class="location">
-            <a class="location-link" href="#"
-              ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
-            >
-            <a class="location-link" href="#"
-              ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
-            >
-          </div>
-        </div>
-
-        <div class="testimonials-right">
-          <h4>Joe and Sal's</h4>
-          <p class="testimonial-right">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Molestiae nisi perferendis <br />
-            aspernatur facilis, possimus
-          </p>
-          <div class="location">
-            <a class="location-link" href="#"
-              ><ion-icon name="logo-usd"></ion-icon> PIZZA</a
-            >
-            <a class="location-link" href="#"
-              ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="meal-section container">
-        <div class="meal grid grid--3-cols">
-          <div class="french">
-            <img class="meal-img" src="img/french.jpg" alt="french food" />
-            <div class="meal-info">
+      <section class="cards-section container">
+        <div class="card grid grid--3-cols">
+          <div class="card-content">
+            <img class="card-img" src="img/french.jpg" alt="french food" />
+            <div class="card-info">
               <h4>Frenchy's</h4>
-              <p class="meal-testiomonial">
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis nihil autem voluptatem nostrum ad.
               </p>
@@ -160,11 +163,11 @@
               </div>
             </div>
           </div>
-          <div class="bergn">
-            <img class="meal-img" src="img/bergn.jpg" alt="bergn food" />
-            <div class="meal-info">
+          <div class="card-content">
+            <img class="card-img" src="img/bergn.jpg" alt="bergn food" />
+            <div class="card-info">
               <h4>Bergn</h4>
-              <p class="meal-testiomonial">
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis nihil autem voluptatem nostrum ad.
               </p>
@@ -178,11 +181,11 @@
               </div>
             </div>
           </div>
-          <div class="catfish">
-            <img class="meal-img" src="img/catfish.jpg" alt="catfish food" />
-            <div class="meal-info">
+          <div class="card-content">
+            <img class="card-img" src="img/catfish.jpg" alt="catfish food" />
+            <div class="card-info">
               <h4>Catfish</h4>
-              <p class="meal-testiomonial">
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis nihil autem voluptatem nostrum ad.
               </p>
@@ -199,60 +202,130 @@
         </div>
       </section>
 
-      <section class="thing-to-do container">
-        <h1>Things to Do</h1>
-        <div class="thing-to-do-section grid grid--2-cols">
-          <div class="thing-to-do-left">
-            <img class="food" src="img/celebration.jpg" alt="food" />
-          </div>
-          <div class="thing-to-do-right">
-            <img class="food" src="img/farmer.jpg" alt="food" />
-          </div>
-        </div>
-        <div class="ushuhuda-left">
-          <h4>Grand Army Farmer's Market</h4>
-          <p class="ushuhuda-txt">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Molestiae nisi perferendis <br />
-            aspernatur facilis, possimus
-          </p>
-          <div class="location">
-            <a class="location-link" href="#"
-              ><ion-icon name="logo-usd"></ion-icon> PIZZA</a
-            >
-            <a class="location-link" href="#"
-              ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
-            >
-          </div>
-        </div>
-
-        <!-- right -->
-        <div class="ushuhuda-right">
-          <h4>Funcky Love Revival Party</h4>
-          <p class="ushuhuda-txt">
-            Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Molestiae nisi perferendis <br />
-            aspernatur facilis, possimus
-          </p>
-          <div class="location">
-            <a class="location-link" href="#"
-              ><ion-icon name="logo-usd"></ion-icon> PIZZA</a
-            >
-            <a class="location-link" href="#"
-              ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
-            >
+      <section class="things-to-do container">
+        <div class="things-to-do-content">
+          <h1>Things to Do</h1>
+          <div class="grid grid--2-cols">
+            <div class="food-card card-3">
+              <div class="food-decriptions food-decriptions-shadow"></div>
+              <div class="food-decriptions">
+                <h4>Funk Love Revival Part</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur <br />
+                  adipisicing elit. Molestiae nisi perferendis <br />
+                  aspernatur facilis, possimus
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="food-card card-4">
+              <div class="food-decriptions food-decriptions-shadow"></div>
+              <div class="food-decriptions">
+                <h4>Grand Army Farmer's Market</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur <br />
+                  adipisicing elit. Molestiae nisi perferendis <br />
+                  aspernatur facilis, possimus
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- ************************************************ -->
-        <div class="meal grid grid--3-cols">
-          <div class="french">
-            <img class="meal-img" src="img/garden.avif" alt="french food" />
-            <div class="meal-info">
-              <h4>Broocklyn Botanic Garden</h4>
-              <p class="meal-testiomonial">
+        <div class="cards-section">
+          <div class="card grid grid--3-cols">
+            <div class="card-content">
+              <img class="card-img" src="img/garden.avif" alt="garden" />
+              <div class="card-info">
+                <h4>Brooklyn Botanic Garden.</h4>
+                <p class="card-decription">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis nihil autem voluptatem nostrum ad.
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <img
+                class="card-img"
+                src="img/brooklyn museum.jpg"
+                alt="museum"
+              />
+              <div class="card-info">
+                <h4>Brocklyn Museum</h4>
+                <p class="card-decription">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis nihil autem voluptatem nostrum ad.
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <img
+                class="card-img"
+                src="img/nitehawk cinema.avif"
+                alt="cenema"
+              />
+              <div class="card-info">
+                <h4>Nitehawk Cinema</h4>
+                <p class="card-decription">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis nihil autem voluptatem nostrum ad.
+                </p>
+                <div class="location">
+                  <a class="location-link" href="#"
+                    ><ion-icon name="logo-usd"></ion-icon> ITALIAN</a
+                  >
+                  <a class="location-link" href="#"
+                    ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thing-to-see container">
+        <h5 class="thing-to-see-heading">Things to Do</h5>
+        <div class="card-see grid grid--3-cols">
+          <div class="card-content">
+            <img class="card-img" src="img/crown.avif" alt="crown" />
+            <div class="card-info">
+              <h4>"Crown Height" Mural</h4>
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Officiis nihil autem voluptatem nostrum rheallaa..
+                Officiis nihil autem voluptatem nostrum ad.
               </p>
               <div class="location">
                 <a class="location-link" href="#"
@@ -264,17 +337,13 @@
               </div>
             </div>
           </div>
-          <div class="bergn">
-            <img
-              class="meal-img"
-              src="img/brooklyn museum.jpg"
-              alt="bergn food"
-            />
-            <div class="meal-info">
-              <h4>Broocklyn Museum</h4>
-              <p class="meal-testiomonial">
+          <div class="card-content">
+            <img class="card-img" src="img/libray.avif" alt="library" />
+            <div class="card-info">
+              <h4>Bkyln Public Library</h4>
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Officiis nihil autem voluptatem nostrum ahuaiwnla.
+                Officiis nihil autem voluptatem nostrum ad.
               </p>
               <div class="location">
                 <a class="location-link" href="#"
@@ -286,17 +355,13 @@
               </div>
             </div>
           </div>
-          <div class="catfish">
-            <img
-              class="meal-img"
-              src="img/nitehawk cinema.avif"
-              alt="catfish food"
-            />
-            <div class="meal-info">
-              <h4>Nitehawk Cinema</h4>
-              <p class="meal-testiomonial">
+          <div class="card-content">
+            <img class="card-img" src="img/avenue.avif" alt="avenue" />
+            <div class="card-info">
+              <h4>Franklin Avenue</h4>
+              <p class="card-decription">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Officiis nihil autem voluptatem nostrum.
+                Officiis nihil autem voluptatem nostrum ad.
               </p>
               <div class="location">
                 <a class="location-link" href="#"
@@ -306,6 +371,46 @@
                   ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
                 >
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="neighborhood container">
+        <h5 class="thing-to-see-heading">Explore the neighborhoods</h5>
+        <div class="card-see grid grid--3-cols">
+          <div class="card-content">
+            <img class="card-img" src="img/bush.avif" alt="bush" />
+            <div class="card-info">
+              <h4>Bushwick</h4>
+              <p class="card-decription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis nihil autem voluptatem nostrum ad.
+              </p>
+            </div>
+          </div>
+          <div class="card-content">
+            <img
+              class="card-img"
+              src="img/williamsburg.avif"
+              alt="williamsbarg"
+            />
+            <div class="card-info">
+              <h4>Williamsbargs</h4>
+              <p class="card-decription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis nihil autem voluptatem nostrum ad.
+              </p>
+            </div>
+          </div>
+          <div class="card-content">
+            <img class="card-img" src="img/park.avif" alt="park slop" />
+            <div class="card-info">
+              <h4>Park Slop</h4>
+              <p class="card-decription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Officiis nihil autem voluptatem nostrum ad.
+              </p>
             </div>
           </div>
         </div>
