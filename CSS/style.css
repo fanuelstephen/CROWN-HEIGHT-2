@@ -46,7 +46,9 @@ body {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
-
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 /* *************************************** */
 /* HEADER */
 /* *************************************** */
@@ -68,7 +70,6 @@ body {
   font-size: 3.2rem;
   font-weight: 700;
 }
-
 .nav-lists {
   font-size: 2rem;
 }
@@ -97,7 +98,6 @@ body {
   height: 2.2rem;
   width: 2.2rem;
 }
-
 .search-icon {
   height: 28px;
   width: 28px;
@@ -108,24 +108,22 @@ body {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
+
 /* *********************************************** */
 /* CROWN HEAIGHT */
 /* *********************************************** */
 .crown-height {
   background-color: #01511d;
 }
-
 .crown-text {
   color: #fff;
   display: grid;
   padding: 2rem;
 }
-
 h2 {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-
 h3 {
   font-size: 4.8rem;
   font-weight: 600;
@@ -141,7 +139,11 @@ h4 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
-
+h6 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 4.8rem;
+}
 .crown-li {
   font-weight: 600;
   display: flex;
@@ -150,7 +152,6 @@ h4 {
   list-style: none;
   margin-bottom: 1.5rem;
 }
-
 .crown-icon {
   height: 1.5rem;
   width: 1.5rem;
@@ -161,57 +162,60 @@ h4 {
 /* ********************************* */
 .things-to-eat {
   background-color: #fff;
-  padding: 4.8rem 0;
 }
 .things-to-eat-content {
-  padding: 0 4.8rem;
+  padding: 4.8rem 6.2rem;
 }
-h1 {
-  font-size: 2.4rem;
-  margin-left: 4.8rem;
-  margin-bottom: 2rem;
-}
+
 .food-card {
-  height: 400px;
   position: relative;
 }
-.food-card.card-1 {
-  background-image: url("../img/meal-1.jpg");
+.card-1 {
+  background-image: url(../img/meal-1.jpg);
+  width: 100%;
+  height: 500px;
 }
-.food-card.card-2 {
-  background-image: url("../img/meal-2.jpg");
+.card-2 {
+  background-image: url(../img/meal-2.jpg);
+  width: 100%;
+  height: 500px;
 }
+.card-3 {
+  background-image: url(../img/celebration.jpg);
+  width: 100%;
+  height: 500px;
+}
+.card-4 {
+  background-image: url(../img/farmer.jpg);
+  width: 100%;
+  height: 500px;
+}
+
 .food-decriptions {
   font-size: 1.8rem;
-  width: 57%;
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 1.8rem 2.4rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 15%;
   height: 180px;
-  bottom: -92px;
-  border: 6px solid red;
+  width: 70%;
+  bottom: -90px;
+  left: 8%;
 }
-
 .food-decriptions.food-decriptions-shadow {
-  bottom: -98px;
+  bottom: -96px;
   background-color: #fcffc7;
   border: 2px solid #7e8064;
   box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
-  left: calc(15% + 5px);
-}
-
-.food-decriptions {
-  background-color: #fcffc7;
-  border: 2px solid #7e8064;
-  padding: 3.2rem;
-  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+  left: calc(9% + 3px);
 }
 
 .location {
   display: flex;
   gap: 3.8rem;
-  margin-top: 3.2rem;
+  margin-top: 2rem;
 }
-
 .location-link:link,
 .location-link:visited {
   font-size: 1.5rem;
@@ -233,10 +237,19 @@ h1 {
 /* *********************************************** */
 .cards-section {
   background-color: #fff;
-  padding: 2.4rem 0;
+  padding: 4.8rem 0;
 }
 .card {
-  margin: 115px 6rem;
+  margin: 150px 8rem;
+}
+.card-content {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #929494;
+  box-shadow: 0 8rem 9rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 .card-img {
   display: block;
@@ -248,36 +261,54 @@ h1 {
   padding: 0 3.2rem;
   margin-bottom: 2rem;
 }
+
 .card-decription {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
-.card-content {
-  background-color: #fff;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #929494;
-  box-shadow: 0 8rem 9rem rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
-}
 
 /* *********************************************** */
 /*THING TO DO */
 /* *********************************************** */
-.things-to-do-section {
-  margin-bottom: 15rem;
+/*  */
+.things-to-do {
+  background-color: #fff;
 }
 .things-to-do-content {
-  background-color: #fff;
-  padding: 47px 4.8rem;
+  padding: 0 6.2rem;
 }
-.food-card.card-3 {
-  background-image: url("../img/celebration.jpg");
+
+.thing-to-do-right {
+  position: relative;
 }
-.food-card.card-4 {
-  background-image: url("../img/farmer.jpg");
+
+.thing-to-do-left {
+  position: relative;
+  justify-self: end;
+}
+.ushuhuda-left {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 270%;
+  left: 53%;
+}
+
+.ushuhuda-right {
+  background-color: #fcffc7;
+  border: 2px solid #7e8064;
+  padding: 3.2rem;
+  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 270%;
+  left: 19%;
+}
+.ushuhuda-txt {
+  font-size: 1.8rem;
+  margin-bottom: 2.8rem;
 }
 
 /* *********************************************** */
@@ -285,20 +316,70 @@ h1 {
 /* *********************************************** */
 .thing-to-see {
   background-color: #fcffc7;
-  padding: 4.8rem 0;
+  padding: 9.6rem 0;
 }
-.card-see {
-  margin: 31px 6rem;
+.thing-to-see-content {
+  margin: 0 5.2rem;
 }
 .thing-to-see-heading {
   font-size: 2.4rem;
-  margin-left: 9.6rem;
+  margin-left: 4.8rem;
+  margin-bottom: 2rem;
 }
 /* *********************************************** */
-/*NEIGHBORHOODS */
+/*explore THE NEIGHTBHOOD*/
 /* *********************************************** */
 .neighborhood {
   background-color: #fff;
+  padding: 9.6rem 0;
+}
+.neighborhood-content {
+  margin: 0 5.2rem;
+}
+/* *********************************************** */
+/*FOOTER*/
+/* *********************************************** */
+footer {
+  background-color: #fff;
   padding: 4.8rem 0;
+}
+.footer-content {
+  margin: 0 5.2rem;
+}
+.footer-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4.8rem;
+}
+.footer-icon {
+  color: rgb(50, 50, 156);
+  width: 3rem;
+  height: 3rem;
+  transition: all 1s;
+}
+.footer-icon:hover {
+  color: rgb(0, 0, 255);
+}
+h5 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+ul li {
+  list-style: none;
+}
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.footer-link:hover {
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+}
+.footer-discription {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
