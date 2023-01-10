@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-
+    <link rel="stylesheet" href="CSS/queries.css" />
+  
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -18,7 +19,7 @@
   </head>
   <body>
     <header>
-      <div class="header container">
+      <div class="header container nav-open">
         <div class="header-content">
           <h1 class="heading">the BLOCK</h1>
           <nav class="nav-list">
@@ -33,15 +34,24 @@
               <li><a class="header-link" href="#">EXPOLORE THE MAP</a></li>
               <li><a class="header-link" href="#">ABOUT</a></li>
             </ul>
+           
           </nav>
         </div>
-        <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        <div class="right-nav-items">
+          <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          <button class="mobile-btn">
+            <ion-icon class="mobile-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="mobile-icon" name="close-outline"></ion-icon>
+          </button>
+        </div>
+
       </div>
     </header>
     <main>
       <section class="crown-height container grid grid--2-cols">
         <img class="crown-image" src="img/image 2.jpg" alt="" />
         <div class="crown-text">
+
           <h2>EXPOLORE</h2>
           <h3>Crown heights</h3>
           <p class="crown-discription">
@@ -54,7 +64,7 @@
 
           <div>
             <h4>Charactaristics:</h4>
-            <div class="grid grid--2-cols">
+            <div class=" characteristic grid grid--2-cols">
               <div>
                 <ul>
                   <li class="crown-li">
@@ -99,12 +109,12 @@
       <section class="things-to-eat container">
         <div class="things-to-eat-content">
           <h6>Things to Eat</h6>
-          <div class="grid grid--2-cols">
+          <div class=" meal grid grid--2-cols">
             <div class="food-card card-1">
               <div class="food-decriptions food-decriptions-shadow"></div>
               <div class="food-decriptions">
                 <h4>Alita</h4>
-                <p>
+                <p class="description">
                   Lorem ipsum dolor sit amet consectetur <br />
                   adipisicing elit. Molestiae nisi perferendis <br />
                   aspernatur facilis, possimus
@@ -124,7 +134,7 @@
               <div class="food-decriptions food-decriptions-shadow"></div>
               <div class="food-decriptions">
                 <h4>Joel's and Sal's</h4>
-                <p>
+                <p class="description">
                   Lorem ipsum dolor sit amet consectetur <br />
                   adipisicing elit. Molestiae nisi perferendis <br />
                   aspernatur facilis, possimus
@@ -181,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="card-content">
+          <div class="card-content last-card">
             <img class="card-img" src="img/catfish.jpg" alt="catfish food" />
             <div class="card-info">
               <h4>Catfish</h4>
@@ -196,7 +206,7 @@
                 <a class="location-link" href="#"
                   ><ion-icon name="location-outline"></ion-icon>VIEW ON MAP</a
                 >
-              </div>
+              </div>           
             </div>
           </div>
         </div>
@@ -205,12 +215,12 @@
        <section class="things-to-do container">
         <div class="things-to-do-content">
           <h6>Things to Do</h6>
-          <div class="grid grid--2-cols">
+          <div class=" meal grid grid--2-cols">
             <div class="food-card card-3">
               <div class="food-decriptions food-decriptions-shadow"></div>
               <div class="food-decriptions">
                 <h4>Funk Love Revival Part</h4>
-                <p>
+                <p class="description">
                   Lorem ipsum dolor sit amet consectetur <br />
                   adipisicing elit. Molestiae nisi perferendis <br />
                   aspernatur facilis, possimus
@@ -229,7 +239,7 @@
               <div class="food-decriptions food-decriptions-shadow"></div>
               <div class="food-decriptions">
                 <h4>Grand Army Farmer's Market</h4>
-                <p>
+                <p class="description">
                   Lorem ipsum dolor sit amet consectetur <br />
                   adipisicing elit. Molestiae nisi perferendis <br />
                   aspernatur facilis, possimus
@@ -290,7 +300,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-content">
+            <div class="card-content last-card">
               <img
                 class="card-img"
                 src="img/nitehawk cinema.avif"
@@ -318,8 +328,8 @@
 
       <section class="thing-to-see container">
         <div class="thing-to-see-content">
-          <h5 class="thing-to-see-heading">Things to Do</h5>
-        <div class="card-see grid grid--3-cols">
+          <h5 class="thing-to-see-heading">Things to see</h5>
+        <div class="card grid grid--3-cols">
           <div class="card-content">
             <img class="card-img" src="img/crown.avif" alt="crown" />
             <div class="card-info">
@@ -337,7 +347,7 @@
                 >
               </div>
             </div>
-          </div>
+       </div>
           <div class="card-content">
             <img class="card-img" src="img/libray.avif" alt="library" />
             <div class="card-info">
@@ -356,7 +366,7 @@
               </div>
             </div>
           </div>
-          <div class="card-content">
+          <div class="card-content last-card">
             <img class="card-img" src="img/avenue.avif" alt="avenue" />
             <div class="card-info">
               <h4>Franklin Avenue</h4>
@@ -381,7 +391,7 @@
       <section class="neighborhood container">
         <div class="neighborhood-content">
           <h5 class="thing-to-see-heading">Explore the neighborhoods</h5>
-        <div class="card-see grid grid--3-cols">
+        <div class="card grid grid--3-cols">
           <div class="card-content">
             <img class="card-img" src="img/bush.avif" alt="bush" />
             <div class="card-info">
@@ -406,7 +416,7 @@
               </p>
             </div>
           </div>
-          <div class="card-content">
+          <div class="card-content last-card">
             <img class="card-img" src="img/park.avif" alt="park slop" />
             <div class="card-info">
               <h4>Park Slop</h4>
@@ -421,8 +431,8 @@
       </section>
     </main>
     <footer class="container">
-      <div class="grid grid--4-cols footer-content">
-        <div class="footer-logo">
+      <div class="grid grid--5-cols footer-content">
+        <div class="footer-logo logo-call">
           <h1 class="heading">the BLOCK</h1>
           <div class="footer-icons">
             <a href="#"
@@ -437,7 +447,16 @@
             <a href="#"><ion-icon class="footer-icon" name="logo-whatsapp"></ion-icon>
             </div></a>
         </div>
-        <div>
+        <div class="address-call">
+          <h5>CONTANT US</h5>
+          <ul>
+            <li><a class="footer-link" href="#">34 arusha st. 2nd Floor</a></li>
+            <li><a class="footer-link" href="#">dare es Salaam</a></li>
+            <li><a class="footer-link" href="#">fanuelgobreya@gmail.com</a></li>
+            
+          </ul>
+        </div>
+        <div class="nav-call">
           <h5>NEIGHBORHOODS</h5>
           <ul>
             <li><a class="footer-link" href="#">Crown Height</a></li>
@@ -448,7 +467,7 @@
             <li><a class="footer-link" href="#">Bortanical Garden</a></li>
           </ul>
         </div>
-        <div>
+        <div class="nav-call">
           <h5>EXPOLORE THE MAP</h5>
           <ul>
             <li><a class="footer-link" href="#">Crown Height</a></li>
@@ -459,13 +478,11 @@
             <li><a class="footer-link" href="#">Bortanical Garden</a></li>
           </ul>
         </div>
-        <div>
+        <div class="nav-call">
           <h5>ABOUT</h5>
           <p class="footer-discription">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            neque! Ipsam quo sed dignissimos corporis voluptatem. Mollitia
-            expedita minima, odit facere, facilis laudantium distinctio
-            exercitationem, culpa animi dolorem aliquid labore!
+            neque! Ipsam quo sed dignissimos corporis voluptatem. .          
           </p>
         </div>
       </div>

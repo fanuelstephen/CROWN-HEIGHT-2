@@ -1,0 +1,253 @@
+/* ********************************* */
+/* below - 1056 small computers */
+/* ********************************* */
+
+/* @media only screen and (max-width: 600px) { 
+  .crown-text {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .food-card.card-1 {
+    margin-bottom: 120px;
+  }
+  .ul-lists {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+  }
+  .search-icon {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .mobile-menu {
+    display: none;
+  }
+  body {
+    background-color: rgb(0, 255, 38) !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  body {
+    background-color: rgb(6, 51, 230) !important;
+  }
+  .grid {
+    gap: 10px;
+  }
+  .things-to-eat-content {
+    padding: 10px;
+  }
+  .card.grid.grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mobile-menu {
+    display: none;
+  }
+  body {
+    background-color: rgb(255, 0, 187) !important;
+  }
+/ */
+
+/* yanguuuuuuuuuuuu */
+
+@media only screen and (max-width: 1103px) {
+  h3 {
+    font-size: 4rem;
+  }
+  .grid {
+    gap: 1rem;
+  }
+  .card {
+    margin: 100px 4rem;
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 1044px) {
+  .thing-to-see {
+    padding: 2rem 0;
+  }
+  .things-to-do-content {
+    padding: 4rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .crown-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .characteristic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .crown-height {
+    padding: 0 3.2rem;
+  }
+  .meal {
+    gap: 11rem;
+  }
+  .card {
+    gap: 3rem;
+  }
+  .location-link:link,
+  .location-link:visited {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .things-to-do-content {
+    padding: 0 5.4rem;
+  }
+  .food-card {
+    margin-bottom: 9.6rem;
+  }
+  .thing-to-see {
+    padding: 1rem 0;
+  }
+  .thing-to-see-content {
+    margin: 0;
+  }
+  .location-link:link,
+  .location-link:visited {
+    font-size: 1rem;
+  }
+  .grid {
+    gap: 1.5rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  /* MOBILE NAVIGATION */
+  .mobile-icon {
+    display: block;
+  }
+  .nav-list {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 12rem;
+    font-size: 3.8rem;
+    transition: all 0.2s;
+
+    /* hide navigation */
+    /* display: none; */
+    opacity: 0;
+
+    /* make ot unaccessible to mouse keybord  */
+    pointer-events: hidden;
+
+    /* hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .ul-lists {
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  .grid {
+    gap: 2rem;
+  }
+
+  .food-card {
+    margin-bottom: 8.9 rem;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-call {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .logo-call,
+  .address-call {
+    grid-column: span 3;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .card {
+    gap: 1rem;
+    margin: 0 2rem;
+  }
+  .footer-link,
+  .footer-discription {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 0 6.4rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  .card-decription {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  .footer-content {
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 358px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .location-link:link,
+  .location-link:visited {
+    font-size: 0.7rem;
+  }
+  .footer-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .thing-to-see-heading {
+    font-size: 2rem;
+  }
+}

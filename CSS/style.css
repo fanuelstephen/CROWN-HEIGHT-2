@@ -46,8 +46,8 @@ body {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 /* *************************************** */
 /* HEADER */
@@ -56,7 +56,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .header-content {
@@ -99,14 +99,28 @@ body {
   width: 2.2rem;
 }
 .search-icon {
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
-  padding: 2.8rem;
 }
 .search-icon:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
+}
+/* MOBILE */
+.mobile-btn {
+  border: none;
+  cursor: pointer;
+  margin-left: 3.2rem;
+}
+.mobile-icon {
+  height: 3.4rem;
+  width: 3.4rem;
+  color: #333;
+  display: none;
+}
+.mobile-icon[name="close-outline"] {
+  display: none;
 }
 
 /* *********************************************** */
@@ -240,7 +254,8 @@ h6 {
   padding: 4.8rem 0;
 }
 .card {
-  margin: 150px 8rem;
+  margin: 10px 8rem;
+  /* margin: 150px 8rem; */
 }
 .card-content {
   background-color: #fff;
@@ -277,6 +292,7 @@ h6 {
 }
 .things-to-do-content {
   padding: 0 6.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .thing-to-do-right {
@@ -287,29 +303,6 @@ h6 {
   position: relative;
   justify-self: end;
 }
-.ushuhuda-left {
-  background-color: #fcffc7;
-  border: 2px solid #7e8064;
-  padding: 3.2rem;
-  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 270%;
-  left: 53%;
-}
-
-.ushuhuda-right {
-  background-color: #fcffc7;
-  border: 2px solid #7e8064;
-  padding: 3.2rem;
-  box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 270%;
-  left: 19%;
-}
-.ushuhuda-txt {
-  font-size: 1.8rem;
-  margin-bottom: 2.8rem;
-}
 
 /* *********************************************** */
 /*THING TO SEE */
@@ -318,9 +311,7 @@ h6 {
   background-color: #fcffc7;
   padding: 9.6rem 0;
 }
-.thing-to-see-content {
-  margin: 0 5.2rem;
-}
+
 .thing-to-see-heading {
   font-size: 2.4rem;
   margin-left: 4.8rem;
@@ -333,9 +324,7 @@ h6 {
   background-color: #fff;
   padding: 9.6rem 0;
 }
-.neighborhood-content {
-  margin: 0 5.2rem;
-}
+
 /* *********************************************** */
 /*FOOTER*/
 /* *********************************************** */
@@ -361,7 +350,7 @@ footer {
   color: rgb(0, 0, 255);
 }
 h5 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
