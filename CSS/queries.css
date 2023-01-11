@@ -422,3 +422,18 @@
     font-size: 5.2px;
   }
 }
+@media only screen and (max-width: 310px) {
+  .thing-to-see-heading {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .crown-li {
+    font-size: 4.8px;
+  }
+  .footer-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
