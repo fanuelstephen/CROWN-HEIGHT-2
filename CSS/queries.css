@@ -328,9 +328,9 @@
     padding: 0 2rem;
   }
 }
-@media only screen and (max-width: 358px) {
+@media only screen and (max-width: 377px) {
   h3 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   h5 {
     font-size: 1rem;
